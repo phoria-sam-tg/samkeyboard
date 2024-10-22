@@ -16,9 +16,9 @@
                         bindings = <
    &kp EQUAL  &kp N1      &kp N2    &kp N3     &kp N4     &kp N5               &kp N6     &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
    &kp TAB    &kp Q       &kp W     &kp E      &kp R      &kp T                &kp Y      &kp U   &kp I      &kp O     &kp P     &kp BSLH
-   &kp BSPC   &kp A       &kp S     &kp D      &kp F      &kp G                &kp H      &kp J   &kp K      &kp L     &kp SEMI  &kp APOS
-   &kp LSHFT  &mt LCTRL Z &kp X     &kp C      &kp V      &kp B                &kp N      &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHIFT
-   &mo 1      &kp LALT    &kp LGUI  &kp BSPC   &kp LALT   &kp SPC              &kp RET    &kp UARW &kp DARW  &kp LARW  &kp RARW  &mo 1
+   &kp CAPS   &kp A       &kp S     &kp D      &kp F      &kp G                &kp H      &kp J   &kp K      &kp L     &kp SEMI  &kp APOS
+   &kp LSHFT  &mt LCTRL Z &kp X     &kp C      &kp V      &kp B                &kp N      &kp M   &kp COMMA  &kp DOT   &mt RCTRL FSLH &kp RSHIFT
+   &mo 1      &kp GLOBE   &kp LALT  &kp LGUI   &kp SPC    &kp BSPC             &kp RET    &kp UARW &kp DARW  &kp LARW  &kp RARW  &mo 1
                         >;
                 };
                 lower_layer {
@@ -28,11 +28,11 @@
 // |       |       |       | LPAR  | RPAR  |       |          |       | LBKT  | RBKT  |MINUS |       |       |
 // |       |       |       | LBKT  | RBKT  |       |          |       |       |       |       |       |       |
                         bindings = <
-   &kp ESC  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4          &trans    &trans    &trans   &trans   &trans    &bt BT_CLR
-   &trans   &kp EXCL      &kp AT         &kp LBRC       &kp RBRC       &kp PIPE              &trans    &kp N7    &kp N8   &kp N9   &kp PLUS  &trans
-   &trans   &kp HASH      &kp DLLR       &kp LPAR       &kp RPAR       &kp GRAVE             &trans    &kp N4    &kp N5   &kp N6   &kp PLUS  &trans
-   &trans   &kp PRCNT     &kp CARET      &kp LBKT       &kp RBKT       &kp TILDE             &trans    &kp N1    &kp N2   &kp N3   &kp BSLH  &trans
-   &trans   &trans        &trans         &trans         &trans         &trans                &trans    &trans    &kp DOT  &kp N0   &kp EQUAL &trans
+   &kp ESC  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4          &bt BT_SEL 5 &bt BT_SEL 6  &bt BT_SEL 7 &bt BT_SEL 8 &bt BT_SEL 9 &bt BT_CLR
+   &trans   &kp EXCL      &kp AT         &kp LBRC       &kp RBRC       &kp PIPE              &trans       &kp N7        &kp N8       &kp N9       &kp PLUS     &trans
+   &trans   &kp HASH      &kp DLLR       &kp LPAR       &kp RPAR       &kp GRAVE             &trans       &kp N4        &kp N5       &kp N6       &kp PLUS     &trans
+   &trans   &kp PRCNT     &kp CARET      &kp LBKT       &kp RBKT       &kp TILDE             &trans       &kp N1        &kp N2       &kp N3       &kp BSLH     &trans
+   &trans   &trans        &trans         &trans         &trans         &trans                &trans       &trans        &kp DOT      &kp N0       &kp EQUAL    &trans
                         >;
                 };
         };
