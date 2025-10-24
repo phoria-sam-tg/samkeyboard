@@ -1,3 +1,5 @@
+name: zmk-keyboard-samboard
 build:
   settings:
     board_root: .
+
