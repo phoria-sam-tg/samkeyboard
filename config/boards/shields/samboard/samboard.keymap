@@ -7,12 +7,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // ---------------------------------------------------------------------------------
-            // |  =   |  1  |  2  |  3  |  4  |  5  |     |  6  |  7  |  8  |  9  |  0  |   -   |
-            // | TAB  |  Q  |  W  |  E  |  R  |  T  |     |  Y  |  U  |  I  |  O  |  P  |   \   |
-            // | CAPS |  A  |  S  |  D  |  F  |  G  |     |  H  |  J  |  K  |  L  |  ;  |   '   |
-            // | SHFT |Ctrl/Z|  X |  C  |  V  |  B  |     |  N  |  M  |  ,  |  .  |Ctrl/?|SHFT |
-            // |  FN  | ALT | GUI| BSPC| SPC | SPC |     | RET |ESC/CMD|CT/DWN|ALT/LFT|CMD/RGT| FN  |
+
             bindings = <
                 &kp EQUAL    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5           &kp N6       &kp N7       &kp N8       &kp N9       &kp N0       &kp MINUS
                 &kp TAB      &kp Q        &kp W        &kp E        &kp R        &kp T            &kp Y        &kp U        &kp I        &kp O        &kp P        &kp BSLH
@@ -23,14 +18,8 @@
         };
 
         lower_layer {
-            // ------------------------------------------------------------------------------------------------------------
-            // | ESC | BT1 | BT2 | BT3 | BT4 | BT5 |       |      |      |      |      |      | BTCLR |
-            // | !   | @   | #   | $   | %   | ^   |       |  ←   |  ↓   |  ↑   |  →   |  +   |       |
-            // | #   | $   | (   | )   | [   | ]   |       |  4   |  5   |  6   |  +   |      |       |
-            // | %   | ^   | [   | ]   | ~   |     |       |  1   |  2   |  3   |  \   |      |       |
-            // |     |     |     |     |     |fn2  |       |FN2   |  .   |  0   |  =   |      |       |
             bindings = <
-                &kp ESC  &kp F1        &kp F2         &kp F3         &kp F4         &kp F5                &kp F6       &kp F7        &kp F8       &kp F9       &kp F0       &kp DEL
+                &kp ESC  &kp F1        &kp F2         &kp F3         &kp F4         &kp F5                &kp F6       &kp F7        &kp F8       &kp F9       &kp F0       &trans
                 &trans   &kp EXCL      &kp AT         &kp LBRC       &kp RBRC       &kp PIPE              &trans       &kp N7        &kp N8       &kp N9       &kp PLUS     &trans
                 &trans   &kp HASH      &kp DLLR       &kp LPAR       &kp RPAR       &kp GRAVE             &trans       &kp N4        &kp N5       &kp N6       &kp PLUS     &trans
                 &trans   &kp PRCNT     &kp CARET      &kp LBKT       &kp RBKT       &kp TILDE             &trans       &kp N1        &kp N2       &kp N3       &kp BSLH     &trans
@@ -39,7 +28,7 @@
         };
 
 	even_lower_layer {
-	bindings = <
+        bindings = <
                 &kp ESC  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4          &bt BT_SEL 5 &bt BT_SEL 6  &bt BT_SEL 7 &bt BT_SEL 8 &out OUT_TOG &bt BT_CLR
                 &trans   &trans        &trans         &trans         &trans         &trans    	          &trans      &trans        &trans        &trans       &trans       &trans
                 &trans   &trans        &trans         &trans         &trans         &trans    	          &trans      &trans        &trans        &trans       &trans       &trans
