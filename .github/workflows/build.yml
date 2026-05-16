@@ -4,4 +4,4 @@ jobs:
   build:
     # Pinned to pre-Zephyr-4.1-variant-check. Bump after migrating to
     # `nice_nano@1//zmk` style board names. See west.yml for rev rationale.
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@b68b29d
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@b68b29d053eec9fa77eb532e3a914210d7c7ba69
