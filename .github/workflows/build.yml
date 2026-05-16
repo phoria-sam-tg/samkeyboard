@@ -2,4 +2,6 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    # Pinned to pre-Zephyr-4.1-variant-check. Bump after migrating to
+    # `nice_nano@1//zmk` style board names. See west.yml for rev rationale.
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@b68b29d
